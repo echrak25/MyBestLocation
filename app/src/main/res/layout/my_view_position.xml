@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:layout_margin="8dp"
+    android:elevation="4dp"
+    android:gravity="center_vertical"
+    android:background="@drawable/card_background"
+    android:shape="rectangle">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="centerCrop"
+        android:layout_marginEnd="12dp"
+        android:src="@drawable/baseline_location_pin_24"
+        android:contentDescription="location_pin"
+        app:tint="#4CAF50" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tvnum_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#3F51B5"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvpseudo_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#757575" />
+
+        <TextView
+            android:id="@+id/tvlatitude_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#757575" />
+
+        <TextView
+            android:id="@+id/tvlongitude_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#757575" /> <!-- Darker gray -->
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageSupprime_position"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/baseline_delete_24"
+        android:contentDescription="Delete position"
+        app:tint="#FF5722" />
+
+<ImageView
+android:id="@+id/imageEdit_position"
+android:layout_width="24dp"
+android:layout_height="24dp"
+android:src="@drawable/baseline_edit_24"
+android:contentDescription="Edit position"
+    app:tint="#2196F3" />
+    </LinearLayout>

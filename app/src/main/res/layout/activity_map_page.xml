@@ -1,0 +1,138 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="sans-serif-medium"
+        android:shadowColor="#80000000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="3"
+        android:text="Enter Location Details"
+        android:textColor="#333333"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+
+    <!-- Profile Image -->
+    <ImageView
+        android:id="@+id/profileImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/circle_border"
+        android:contentDescription="Location Image"
+        android:scaleType="centerCrop"
+        android:src="@drawable/in_adding" />
+
+    <!-- Phone Number Input -->
+    <EditText
+        android:id="@+id/phoneEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/edittext_bg"
+        android:hint="Phone Number"
+        android:inputType="phone"
+        android:padding="12dp"
+        android:textColor="#333333" />
+
+    <!-- Pseudo Input -->
+    <EditText
+        android:id="@+id/pseudoEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/edittext_bg"
+        android:hint="Pseudo"
+        android:inputType="text"
+        android:padding="12dp"
+        android:textColor="#333333" />
+
+    <!-- Longitude Input -->
+    <EditText
+        android:id="@+id/longitudeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/edittext_bg"
+        android:hint="Longitude"
+        android:inputType="numberDecimal"
+        android:padding="12dp"
+        android:textColor="#333333" />
+
+    <!-- Latitude Input -->
+    <EditText
+        android:id="@+id/latitudeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/edittext_bg"
+        android:hint="Latitude"
+        android:inputType="numberDecimal"
+        android:padding="12dp"
+        android:textColor="#333333" />
+
+
+    <!-- Action Buttons Layout with Spacing and New Colors -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="#81D4FA"
+            android:text="Back"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/mapButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="#4FC3F7"
+            android:text="Map"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="#29B6F6"
+            android:text="Add"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <!-- Get Position Button with Vector Icon and New Color -->
+    <Button
+        android:id="@+id/getPositionButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#00ACC1"
+        android:drawableLeft="@drawable/baseline_my_location_24"
+        android:text="Get Position"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

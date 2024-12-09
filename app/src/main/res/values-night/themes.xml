@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme with a beautiful blue theme. -->
+    <style name="Theme.MyBestLocation" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color (Blue shades). -->
+        <item name="colorPrimary">#1E88E5</item> <!-- Primary Blue (vibrant blue) -->
+        <item name="colorPrimaryVariant">#1565C0</item> <!-- Darker Blue -->
+        <item name="colorOnPrimary">#FFFFFF</item> <!-- White text on primary color -->
+
+        <!-- Secondary brand color (Blue shades). -->
+        <item name="colorSecondary">#42A5F5</item> <!-- Lighter Blue -->
+        <item name="colorSecondaryVariant">#039BE5</item> <!-- Medium Blue -->
+        <item name="colorOnSecondary">#FFFFFF</item> <!-- White text on secondary color -->
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+
+        <!-- Customize your theme here. -->
+    </style>
+</resources>

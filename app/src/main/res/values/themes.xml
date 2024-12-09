@@ -1,0 +1,29 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme with blue colors. -->
+    <style name="Theme.MyBestLocation" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color (blue). -->
+        <item name="colorPrimary">#2196F3</item> <!-- Light Blue -->
+        <item name="colorPrimaryVariant">#1976D2</item> <!-- Darker Blue -->
+        <item name="colorOnPrimary">#FFFFFF</item> <!-- White text on primary color -->
+
+        <!-- Secondary brand color (blue shades). -->
+        <item name="colorSecondary">#64B5F6</item> <!-- Lighter Blue -->
+        <item name="colorSecondaryVariant">#42A5F5</item> <!-- Medium Blue -->
+        <item name="colorOnSecondary">#FFFFFF</item> <!-- White text on secondary color -->
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+
+        <!-- Customize the theme here. -->
+    </style>
+
+    <!-- Theme without ActionBar -->
+    <style name="Theme.MyBestLocation.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!-- Overlay styles for AppBar and Popup -->
+    <style name="Theme.MyBestLocation.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.MyBestLocation.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>
